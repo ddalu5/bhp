@@ -133,7 +133,7 @@ def client_sender(buffer):
 def usage():
     print "BHP Net Tool"
     print
-    print "Usage: exe_replace_netcat.py -t target_host -p port"
+    print "Usage: bhnet.py -t target_host -p port"
     print "-l --listen                  - listen on[host]:[port] for incoming connections"
     print "-e --execute=file_to_run     - execute the given file upon receiving a connection"
     print "-c --command                 - initialize a command shell"
@@ -141,9 +141,9 @@ def usage():
     print
     print
     print "Examples: "
-    print "exe_replace_netcat.py -t 192.168.0.1 -p 5555 -l -c"
-    print "exe_replace_netcat.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe"
-    print "exe_replace_netcat.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\""
+    print "bhnet.py -t 192.168.0.1 -p 5555 -l -c"
+    print "bhnet.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe"
+    print "bhnet.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\""
     print "echo 'ABCDEFGHI' | ./bhpnet.py -t 192.168.11.12 -p 135"
     sys.exit(0)
 
